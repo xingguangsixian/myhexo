@@ -182,7 +182,7 @@
       
         
         <li class="menu-item menu-item-home">
-          <a href="/myhexo/‘’" rel="section">
+          <a href="/myhexo/" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
@@ -279,154 +279,6 @@
           <div id="content" class="content">
             
   <section id="posts" class="posts-expand">
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://www.qunxing.site/myhexo/2018/09/15/一-PDI（Kettle）安装/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="群星">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/myhexo/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="群星随记">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/myhexo/2018/09/15/一-PDI（Kettle）安装/" itemprop="url">一.PDI（Kettle）安装</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-09-15T14:39:07+08:00">
-                2018-09-15
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="1-创建转换流程"><a href="#1-创建转换流程" class="headerlink" title="1. 创建转换流程"></a>1. 创建转换流程</h1><p>以如下将mongodb库中数据导出到Excel文件的简单过程为主进行讲解</p>
-<p><img src="https://note.youdao.com/yws/public/resource/a7b8e1e337a59a58a3e733e08283e67d/xmlnote/5160B0370D4A470E871F67B91FB6F73A/2880" alt="转换过程图"></p>
-<blockquote>
-<p>点击图中红框的图标可以指定连接到上一个数据源</p>
-</blockquote>
-<p>选择左上“文件-&gt;新建-&gt;转换”，如图</p>
-<p><img src="https://note.youdao.com/yws/public/resource/a7b8e1e337a59a58a3e733e08283e67d/xmlnote/49B5B898365D4E4FBA1DE6D11698E9B9/2856" alt="新建转换"></p>
-<h1 id="2-拖动创建MongoDB-Input数据源，并配置"><a href="#2-拖动创建MongoDB-Input数据源，并配置" class="headerlink" title="2. 拖动创建MongoDB Input数据源，并配置"></a>2. 拖动创建MongoDB Input数据源，并配置</h1><ol>
-<li>从左侧“Big Data”中拖动MongoDB Input</li>
-<li>配置MongoDB连接中的IP,Port,用户名，密码<br><img src="https://note.youdao.com/yws/public/resource/a7b8e1e337a59a58a3e733e08283e67d/xmlnote/A8DEAD173B5E46DC901D8784DD7F84CE/2924" alt="配置连接"></li>
-<li>配置要查询的数据库和集合<br><img src="https://note.youdao.com/yws/public/resource/a7b8e1e337a59a58a3e733e08283e67d/xmlnote/80ACFF69BCA14D7998524B90C70B3F51/2861" alt="配置数据库和集合"></li>
-<li>填写查询条件<br><img src="https://note.youdao.com/yws/public/resource/a7b8e1e337a59a58a3e733e08283e67d/xmlnote/A0203D315489400BB0A8DEE8C8734798/2870" alt="填写查询条"></li>
-<li>选择如图中的单个json字段，以及输出的json字段名称<br><img src="https://note.youdao.com/yws/public/resource/a7b8e1e337a59a58a3e733e08283e67d/xmlnote/CEAADB0A01294C169E0FD1D03764AB5C/2868" alt="配置查询输出的字段"></li>
-<li>预览查看数据</li>
-</ol>
-<h1 id="3-拖动JSON-Input，并配置"><a href="#3-拖动JSON-Input，并配置" class="headerlink" title="3.拖动JSON Input，并配置"></a>3.拖动JSON Input，并配置</h1><ol>
-<li>从左侧“Input”中拖动JSON Input,并连接到MongoDB Input</li>
-<li>在“文件”Tab中，选择“源定义在一个字段里”，然后“选择字段获取源”中的MongoDB Input 输出的字段名称<br><img src="https://note.youdao.com/yws/public/resource/a7b8e1e337a59a58a3e733e08283e67d/xmlnote/E060868C3D064EB093B0206CDB3C24BE/2872" alt="配置字段获取源"></li>
-<li>在“字段”Tab中配置要获取的字段名称及路径，类型<br><img src="https://note.youdao.com/yws/public/resource/a7b8e1e337a59a58a3e733e08283e67d/xmlnote/088CECDCEFE74F2A8FCC51A5610FD86D/2874" alt="配置字段及路径"></li>
-</ol>
-<h1 id="4-拖动Excel输出，并配置"><a href="#4-拖动Excel输出，并配置" class="headerlink" title="4.拖动Excel输出，并配置"></a>4.拖动Excel输出，并配置</h1><ol>
-<li>从左侧“输出”中拖动Excel 输出并配置</li>
-<li>在”文件”Tab中配置输出文件名称，路径</li>
-</ol>
-<p><img src="https://note.youdao.com/yws/public/resource/a7b8e1e337a59a58a3e733e08283e67d/xmlnote/5EBC0881A2014682BD0CC58E24229632/2876" alt="配置输出文件"></p>
-<ol start="3">
-<li>在“字段”Tab中，点击获取字段，配置要输出的字段及类型<br><img src="https://note.youdao.com/yws/public/resource/a7b8e1e337a59a58a3e733e08283e67d/xmlnote/26016A8A57ED48B682FE56AC585C369E/2878" alt="配置输出字段"></li>
-</ol>
-<h1 id="5-运行查看数据"><a href="#5-运行查看数据" class="headerlink" title="5. 运行查看数据"></a>5. 运行查看数据</h1><p><img src="https://note.youdao.com/yws/public/resource/a7b8e1e337a59a58a3e733e08283e67d/xmlnote/AC70F47E0D784D5089F5BEC1EE964425/2993" alt="运行结果"></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
     
       
 
@@ -726,7 +578,7 @@
               
                 <a href="/myhexo/archives/">
               
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
