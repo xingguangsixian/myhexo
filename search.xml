@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[hexo搭建小结]]></title>
+    <url>%2Fmyhexo%2F2018%2F09%2F15%2Fhexo%E6%90%AD%E5%BB%BA%E5%B0%8F%E7%BB%93%2F</url>
+    <content type="text"><![CDATA[博客搭建选型Jeklly or Hexo？最终选择Hexo，因为基于node.js,比较熟悉。]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[Hello World]]></title>
+    <url>%2Fmyhexo%2F2018%2F09%2F15%2Fhello-world%2F</url>
+    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+  </entry>
+</search>
